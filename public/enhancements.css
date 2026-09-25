@@ -1,0 +1,30 @@
+/* Focus, motion and account surfaces share the quiz's dark medical palette. */
+.quiz-top{position:sticky;top:8px;z-index:10;background:#111318f5;padding:12px;border:1px solid #334355;border-radius:16px;box-shadow:0 10px 28px #0005;backdrop-filter:blur(12px)}
+.primary,.skip,.secondary{position:relative;overflow:hidden;border:1px solid #ffffff20;box-shadow:0 7px 0 #0004,0 10px 24px #0003;transition:transform .2s,box-shadow .2s,filter .2s;isolation:isolate}
+.primary{background:linear-gradient(120deg,#226cef,#6951ef);text-shadow:0 1px 2px #0004}
+.skip{background:linear-gradient(120deg,#cc7300,#f4a322);color:#fff}
+.secondary{background:linear-gradient(120deg,#273a52,#302943)}
+.primary:before,.skip:before,.secondary:before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,#ffffff30 50%,transparent 70%);transform:translateX(-120%);transition:transform .6s;z-index:-1}
+.primary:hover:not(:disabled),.skip:hover:not(:disabled),.secondary:hover:not(:disabled){transform:translateY(-3px);filter:brightness(1.12);box-shadow:0 10px 0 #0003,0 14px 26px #446cff30}
+.primary:hover:before,.skip:hover:before,.secondary:hover:before{transform:translateX(120%)}
+.sound{background:radial-gradient(circle at 30% 20%,#46607d,#212435 75%);box-shadow:inset 0 1px 0 #ffffff33,0 4px 10px #0005;transition:transform .2s,box-shadow .2s}
+.sound:hover{transform:scale(1.1);box-shadow:0 0 18px #54bbff50}
+.text-button{border:1px solid transparent;border-radius:10px}.text-button:hover:not(:disabled){background:#27364c;border-color:#526a8a}
+.option-choice{transition:color .2s}.option:hover .option-image{transform:rotate(-9deg) scale(1.08);transition:transform .2s}
+.question{border-left:3px solid transparent;border-radius:12px;padding:12px 16px;margin-left:-16px;margin-right:-16px;transition:background .3s,border-color .3s,box-shadow .3s}
+.question.speaking{background:linear-gradient(110deg,#17415970,#171f3230);border-left-color:#52d4ff;box-shadow:0 0 28px #31c6ff14}
+.question.question-arrive{animation:question-glow 1s ease-out}
+@keyframes question-glow{0%{background:#244b65;border-color:#5ee1ff;box-shadow:0 0 28px #45cfff50}100%{border-color:#5ee1ff00}}
+#score-burst.score-balloon{position:fixed;top:0;left:0;right:auto;z-index:1000;opacity:0;pointer-events:none;width:112px;height:128px;display:grid;place-items:center;border-radius:52% 52% 48% 48%;font-size:64px;line-height:1;font-weight:900;letter-spacing:-4px;transform:translate(-50%,-50%);text-shadow:0 3px 0 #0004;border:2px solid #ffffff60;box-shadow:inset 10px 9px 18px #ffffff25,0 15px 35px #0006}
+#score-burst.score-balloon:before{content:"";position:absolute;bottom:-10px;left:48%;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:12px solid currentColor;transform:rotate(180deg)}
+#score-burst.score-balloon:after{content:"";position:absolute;width:20px;height:38px;top:calc(100% + 10px);left:50%;border-left:2px solid #d4edff80;border-radius:50%}
+.score-balloon.positive{background:radial-gradient(circle at 30% 20%,#85f5b7,#087b59 85%);color:#edfff5}
+.score-balloon.negative{background:radial-gradient(circle at 30% 20%,#ff9baf,#b72444 85%);color:#fff2f4}
+.score-balloon.neutral{background:radial-gradient(circle at 30% 20%,#a4ccff,#4153aa 85%);color:#f4f7ff}
+.account-nav{display:flex;align-items:center;gap:10px}.account-nav button{font-size:12px;padding:10px 15px;border-radius:20px}.account-name{font-size:12px;color:#b5c9e5;max-width:170px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.save-note{border:1px solid #36475c;background:#182536;border-radius:12px;padding:12px 16px;color:#bfd6f0;font-size:13px;line-height:1.6;margin:18px 0}
+.auth-dialog{max-width:480px;width:calc(100% - 32px);border:1px solid #465d7d;border-radius:24px;background:linear-gradient(150deg,#1d2e46,#10151f);color:#fff;padding:30px;box-shadow:0 25px 100px #000b}
+.auth-dialog::backdrop{background:#020812b8;backdrop-filter:blur(7px)}
+.auth-top{display:flex;align-items:center;justify-content:space-between;gap:20px}.auth-top h2{margin:0;font-size:27px}.auth-dialog label{margin:16px 0}.auth-dialog input{display:block;width:100%;padding:14px;margin-top:8px;border:1px solid #435572;border-radius:11px;background:#101a29;color:#fff}.auth-dialog .primary{width:100%;margin-top:10px}.auth-switch{margin-top:18px;width:100%;text-align:center}.auth-error{font-size:13px;color:#ffc391;line-height:1.5}.history{max-width:1050px;margin:auto}.history-top{display:flex;justify-content:space-between;align-items:center;gap:15px}.history-list{display:grid;gap:15px;margin-top:25px}.history-card{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px;border:1px solid #3a4760;border-radius:15px;background:linear-gradient(120deg,#202e43,#20202f)}.history-card h3{margin:0 0 8px;font-size:17px}.history-card p{margin:4px 0;color:#a8bfd6;font-size:13px}.history-score{font-size:28px;font-weight:850;color:var(--cyan)}.history-card button{font-size:13px;padding:12px 16px}.history-empty{padding:35px;border:1px dashed #526984;border-radius:15px;color:#bed0e5;text-align:center}.history-summary{color:#a7d8fb}.saved-indicator{color:var(--green);font-size:12px}
+@media(max-width:650px){.site-header{gap:8px;flex-wrap:wrap}.brand{font-size:13px}.brand img{width:28px;height:28px}.account-nav{gap:6px}.account-nav button{padding:8px 10px}.account-name{max-width:90px}.history-card{flex-wrap:wrap}.history-top{align-items:flex-start}.question{padding:12px;margin-left:-8px;margin-right:-8px}.auth-dialog{padding:24px}#score-burst.score-balloon{width:94px;height:108px;font-size:56px}}
+@media(prefers-reduced-motion:reduce){.primary:hover:not(:disabled),.skip:hover:not(:disabled),.secondary:hover:not(:disabled),.sound:hover,.option:hover .option-image{transform:none}.primary:before,.skip:before,.secondary:before{display:none}}

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "model-paper-1-q301",
+    "number": 301,
+    "paperId": "model-paper-1",
+    "question": "A researcher compares the two main cell types in the islets of Langerhans. Which pairing correctly links a cell type, its hormone and the hormone's effect?",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "A researcher compares the two main cell types in the islets of Langerhans. Which pairing correctly links a cell type, its hormone and the hormone's effect?"
+      }
+    ],
+    "options": [
+      { "label": "A", "text": "Alpha cells — insulin — lowers blood glucose" },
+      { "label": "B", "text": "Beta cells — glucagon — raises blood glucose" },
+      { "label": "C", "text": "Beta cells — insulin — enhances cellular glucose uptake" },
+      { "label": "D", "text": "Alpha cells — glucagon — stimulates conversion of glucose into glycogen" }
+    ],
+    "correctOption": "C",
+    "sourceAnswer": "C",
+    "explanation": "Pancreatic beta cells secrete insulin, which increases glucose uptake and use by target cells and promotes glycogen formation, lowering blood glucose. Alpha cells secrete glucagon, which raises blood glucose by promoting glycogen breakdown and formation of glucose from non-carbohydrate sources. Therefore, only option C correctly combines the cell type, hormone and effect.",
+    "reference": "NCERT Biology, Class XI, Chemical Coordination and Integration, section 19.2.8 Pancreas, pp. 245–246, reprint 2026–27. https://ncert.nic.in/textbook/pdf/kebo119.pdf",
+    "notes": ["Original supplementary practice question added at the user's request; not part of the supplied Word document."],
+    "source": {
+      "type": "supplemental",
+      "file": null,
+      "questionNumber": null,
+      "bodyBlockIndex": null,
+      "referenceUrl": "https://ncert.nic.in/textbook/pdf/kebo119.pdf"
+    },
+    "quality": {
+      "quizEligible": true,
+      "warnings": [],
+      "verification": "original_question_checked_against_ncert_section_19_2_8"
+    }
+  }
+]

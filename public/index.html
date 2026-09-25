@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0c10">
+  <title>NEET Practice · Model Paper 1</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/enhancements.css">
+  <script src="/app.js" type="module"></script>
+</head>
+<body>
+  <header class="site-header"><a href="/" class="brand"><img src="/stethoscope.svg" alt=""><span>NEET<span class="brand-light"> / PRACTICE</span></span></a><nav class="account-nav" aria-label="Account"><span id="account-name" class="account-name">Guest practice</span><button id="history-button" class="secondary" hidden>My practice</button><button id="login-button" class="secondary">Log in / Sign up</button><button id="logout-button" class="text-button" hidden>Log out</button></nav></header>
+  <main>
+    <section id="setup" class="panel setup">
+      <p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
+      <h1>A little practice.<br><span>A stronger tomorrow.</span></h1>
+      <p class="intro">Build your biology confidence, one question at a time.<br>Listen, answer, and understand the reason behind it.</p>
+      <p id="save-note" class="save-note">Log in with your email or mobile to save your practice history. You can also practice as a guest.</p>
+      <div class="rules"><span><strong>30s</strong> per question</span><span><strong class="green">+4</strong> correct answer</span><span><strong class="red">−1</strong> incorrect answer</span></div>
+      <form id="start-form">
+        <div class="setup-fields"><label>Practice length<select id="count"><option value="10">10 questions · Quick practice</option><option value="25">25 questions</option><option value="50">50 questions</option><option value="300">300 questions · Full paper</option></select></label><label>Question order<select id="order"><option value="false">Paper order</option><option value="true">Random selection</option></select></label></div>
+        <label class="check"><input id="auto-speak" type="checkbox"> Also read explanations after skipping a question</label>
+        <p class="small muted">Correct selections announce “Correct Answer selected” and read the explanation. Wrong selections announce “This answer is wrong” and read the correct answer and explanation.</p>
+        <details><summary>Connection settings</summary><label>API key (only if enabled on your server)<input id="api-key" type="password" autocomplete="off" placeholder="Optional bearer key"></label></details>
+        <button id="start" class="primary" type="submit">Start practice <span>→</span></button>
+      </form>
+      <p class="small muted">300 scorable questions</p>
+    </section>
+    <section id="quiz" class="panel quiz" hidden>
+      <div class="quiz-top"><div><p id="counter" class="counter"></p><span id="source-number" class="small muted"></span></div><div class="score-time"><div class="score-wrap"><div id="scoreboard" class="scoreboard">SCORE: <span id="score">0</span><span id="max-score"></span></div><span id="score-burst" aria-hidden="true"></span></div><div id="timer" class="timer" role="timer" aria-label="Time remaining"><span>⌛</span> <span id="seconds">30</span>s</div></div></div>
+      <div class="progress-track"><div id="progress"></div></div>
+      <div class="question-heading"><span class="eyebrow">BIOLOGY · SINGLE ANSWER</span><button id="speak-question" class="sound" aria-label="Read question and options aloud" title="Read question and options aloud">🔊</button></div>
+      <div id="question" class="question" tabindex="-1"></div>
+      <div id="options" class="options"></div>
+      <section id="explanation" class="explanation" hidden aria-label="Answer explanation"><div class="explanation-top"><span id="outcome" class="eyebrow"></span><button id="speak-explanation" class="sound" aria-label="Read explanation aloud">🔊</button></div><h2 id="correct-answer"></h2><p id="explanation-text"></p><p id="reference" class="reference"></p></section>
+      <div class="quiz-actions"><button id="finish" class="text-button">Finish practice</button><button id="skip" class="skip">Skip</button><button id="next" class="primary" disabled>Next <span>→</span></button></div>
+      <div class="quiz-foot"><span>Skip or timeout: 0 points. Timeout moves to the next question automatically.</span><button id="stop-speech" class="text-button">Stop audio</button></div>
+      <div id="retry-area" hidden><p>Your answer is saved in this session. Retry when the connection is available.</p><button id="retry" class="primary">Retry answer check</button></div>
+    </section>
+
+    <section id="report" class="panel report" hidden>
+      <p id="report-status" class="eyebrow">PRACTICE COMPLETE</p><h1>Every question is progress.</h1><p id="report-subtitle" class="muted"></p>
+      <p id="saved-indicator" class="saved-indicator"></p>
+      <div class="report-score"><span id="report-score"></span><small id="report-max"></small></div>
+      <div id="report-stats" class="stats"></div>
+      <div class="report-actions"><button id="download" class="primary">↓ Download PDF</button><button id="share" class="secondary">↗ Share report</button><button id="restart" class="secondary">Practice again</button></div>
+      <p class="small muted">The PDF includes your score and a result for each reviewed question. Explanations and source references appear below.</p>
+      <details id="share-fallback" hidden><summary>Copy this report summary</summary><textarea id="share-text" readonly aria-label="Report summary"></textarea></details>
+      <h2 class="review-title">Your answer review</h2><div id="review"></div>
+    </section>
+    <section id="history" class="panel history" hidden>
+      <div class="history-top"><div><p class="eyebrow">YOUR LEARNING JOURNEY</p><h1>Practice adds up.</h1></div><button id="history-back" class="secondary">← New practice</button></div>
+      <p id="history-summary" class="history-summary"></p><div id="history-list" class="history-list"></div>
+    </section>
+    <p id="notice" role="status" aria-live="polite"></p>
+  </main>
+  <dialog id="auth-dialog" class="auth-dialog">
+    <div class="auth-top"><h2 id="auth-title">Welcome back.</h2><button id="auth-close" class="sound" aria-label="Close login">×</button></div>
+    <p class="muted small">Your practice, scores and explanations, in one place.</p>
+    <form id="auth-form">
+      <label>Email or mobile number<input id="identifier" type="text" autocomplete="username" required maxlength="254" placeholder="you@example.com or +91 9876543210"></label>
+      <label>Password<input id="password" type="password" autocomplete="current-password" required minlength="10" maxlength="128" placeholder="At least 10 characters"></label>
+      <p class="small muted">Mobile: 10-digit Indian number or +country code. Contact format is checked; OTP verification is not enabled.</p>
+      <p id="auth-error" class="auth-error" role="status"></p>
+      <button id="auth-submit" class="primary" type="submit">Log in →</button>
+      <button id="auth-switch" class="text-button auth-switch" type="button">New here? Create an account</button>
+    </form>
+  </dialog>
+  <footer>NEET PRACTICE <span>Learn the answer. Understand the why.</span></footer>
+</body>
+</html>

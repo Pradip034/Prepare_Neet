@@ -1,0 +1,9 @@
+{
+  "name": "neet-quiz-api",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "REST question bank and quiz grading from NEET Model Paper 1",
+  "engines": { "node": ">=22.13" },
+  "scripts": { "start": "node src/server.js", "test": "node --test" }
+}

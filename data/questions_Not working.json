@@ -1,0 +1,233 @@
+{
+  "paperId": "model-paper-2",
+  "title": "NEET Model Paper 2 – Chemical Coordination",
+  "sourceFile": "02_NEET MODEL Paper Chemical Coordination for Mock test App.docx",
+  "sourceSha256": "d3a0a75749f7b5cdd53bbfb4aac373c276b6e6df49285cc2078ac6a09149bd69",
+  "questions": [
+    {
+      "id": "model-paper-2-q066",
+      "number": 66,
+      "paperId": "model-paper-2",
+      "question": "Which physiological variables are particularly maintained by aldosterone?",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Which physiological variables are particularly maintained by aldosterone?"
+        }
+      ],
+      "options": [
+        {
+          "label": "A",
+          "text": "Electrolyte balance, body fluid volume, osmotic pressure and blood pressure"
+        },
+        {
+          "label": "B",
+          "text": "24-hour diurnal rhythm and body temperature only"
+        },
+        {
+          "label": "C",
+          "text": "Cell-mediated immunity and antibody production"
+        },
+        {
+          "label": "D",
+          "text": "Blood calcium levels and bone remodeling"
+        }
+      ],
+      "correctOption": "A",
+      "sourceAnswer": "A",
+      "explanation": "Aldosterone helps in the maintenance of electrolytes, body fluid volume, osmotic pressure, and blood pressure by regulating sodium and water reabsorption in the renal tubules.",
+      "reference": "p. 245.",
+      "notes": [],
+      "source": {
+        "file": "02_NEET MODEL Paper Chemical Coordination for Mock test App.docx",
+        "questionNumber": 66,
+        "bodyBlockIndex": 397
+      },
+      "quality": {
+        "quizEligible": true,
+        "warnings": [],
+        "verification": "transcribed_from_source_not_independently_fact_checked"
+      }
+    },
+    {
+      "id": "model-paper-2-q067",
+      "number": 67,
+      "paperId": "model-paper-2",
+      "question": "Small amounts of androgenic steroids secreted by the adrenal cortex play a role in:",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Small amounts of androgenic steroids secreted by the adrenal cortex play a role in:"
+        }
+      ],
+      "options": [
+        {
+          "label": "A",
+          "text": "Growth of axial hair, pubic hair and facial hair during puberty"
+        },
+        {
+          "label": "B",
+          "text": "Regulation of 24-hour diurnal rhythm"
+        },
+        {
+          "label": "C",
+          "text": "Milk ejection during lactation"
+        },
+        {
+          "label": "D",
+          "text": "Inhibition of erythropoiesis"
+        }
+      ],
+      "correctOption": "A",
+      "sourceAnswer": "A",
+      "explanation": "Small amounts of androgenic steroids are secreted by the adrenal cortex which play a role in the growth of axial hair, pubic hair and facial hair during puberty.",
+      "reference": "p. 245.",
+      "notes": [],
+      "source": {
+        "file": "02_NEET MODEL Paper Chemical Coordination for Mock test App.docx",
+        "questionNumber": 67,
+        "bodyBlockIndex": 403
+      },
+      "quality": {
+        "quizEligible": true,
+        "warnings": [],
+        "verification": "transcribed_from_source_not_independently_fact_checked"
+      }
+    },
+    {
+      "id": "model-paper-2-q068",
+      "number": 68,
+      "paperId": "model-paper-2",
+      "question": "The pancreas is classified as a composite gland because:",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The pancreas is classified as a composite gland because:"
+        }
+      ],
+      "options": [
+        {
+          "label": "A",
+          "text": "It acts as both an exocrine and an endocrine gland"
+        },
+        {
+          "label": "B",
+          "text": "It secretes only steroid hormones"
+        },
+        {
+          "label": "C",
+          "text": "It is composed entirely of neural tissue"
+        },
+        {
+          "label": "D",
+          "text": "It is located inside the brain diencephalon"
+        }
+      ],
+      "correctOption": "A",
+      "sourceAnswer": "A",
+      "explanation": "Pancreas is a composite gland which acts as both exocrine and endocrine gland.",
+      "reference": "p. 245.",
+      "notes": [],
+      "source": {
+        "file": "02_NEET MODEL Paper Chemical Coordination for Mock test App.docx",
+        "questionNumber": 68,
+        "bodyBlockIndex": 409
+      },
+      "quality": {
+        "quizEligible": true,
+        "warnings": [],
+        "verification": "transcribed_from_source_not_independently_fact_checked"
+      }
+    },
+    {
+      "id": "model-paper-2-q069",
+      "number": 69,
+      "paperId": "model-paper-2",
+      "question": "Which cell type in the Islets of Langerhans secretes glucagon?",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Which cell type in the Islets of Langerhans secretes glucagon?"
+        }
+      ],
+      "options": [
+        {
+          "label": "A",
+          "text": "Alpha cells"
+        },
+        {
+          "label": "B",
+          "text": "Beta cells"
+        },
+        {
+          "label": "C",
+          "text": "Acinar cells"
+        },
+        {
+          "label": "D",
+          "text": "Follicular cells"
+        }
+      ],
+      "correctOption": "A",
+      "sourceAnswer": "A",
+      "explanation": "The two main types of cells in the Islet of Langerhans are alpha-cells (which secrete glucagon) and beta-cells (which secrete insulin).",
+      "reference": "p. 245.",
+      "notes": [],
+      "source": {
+        "file": "02_NEET MODEL Paper Chemical Coordination for Mock test App.docx",
+        "questionNumber": 69,
+        "bodyBlockIndex": 415
+      },
+      "quality": {
+        "quizEligible": true,
+        "warnings": [],
+        "verification": "transcribed_from_source_not_independently_fact_checked"
+      }
+    },
+    {
+      "id": "model-paper-2-q070",
+      "number": 70,
+      "paperId": "model-paper-2",
+      "question": "Which combination correctly describes the primary action of glucagon on blood glucose?",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Which combination correctly describes the primary action of glucagon on blood glucose?"
+        }
+      ],
+      "options": [
+        {
+          "label": "A",
+          "text": "Hyperglycemic hormone that stimulates glycogenolysis and gluconeogenesis"
+        },
+        {
+          "label": "B",
+          "text": "Hypoglycemic hormone that enhances cellular glucose uptake"
+        },
+        {
+          "label": "C",
+          "text": "Hormone that reduces blood calcium by inhibiting osteoclasts"
+        },
+        {
+          "label": "D",
+          "text": "Hormone that stimulates glycogenesis in hepatocytes"
+        }
+      ],
+      "correctOption": "A",
+      "sourceAnswer": "A",
+      "explanation": "Glucagon is a hyperglycemic hormone; it acts on hepatocytes, stimulating glycogenolysis and gluconeogenesis to increase blood sugar levels.",
+      "reference": "p. 245.",
+      "notes": [],
+      "source": {
+        "file": "02_NEET MODEL Paper Chemical Coordination for Mock test App.docx",
+        "questionNumber": 70,
+        "bodyBlockIndex": 421
+      },
+      "quality": {
+        "quizEligible": true,
+        "warnings": [],
+        "verification": "transcribed_from_source_not_independently_fact_checked"
+      }
+    }
+  ]
+}

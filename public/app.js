@@ -132,7 +132,7 @@ function renderQuestion() {
     audio.onclick = () => speak(`Option ${option.label}. ${option.text}`);
     row.append(button, audio); $('options').append(row);
   });
-  deadline = Date.now() + 30000; tick(); interval = setInterval(tick, 200); controls();
+  deadline = Date.now() + 60000; tick(); interval = setInterval(tick, 200); controls();
   $('question').focus({ preventScroll: true });
   $('question').classList.remove('question-arrive');
   void $('question').offsetWidth;
